@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { FiSearch } from "react-icons/fi";
 import "./styles.css";
-import api from "./services/api";
+import api from "./services/api-cep";
 
 function App() {
-  const [cep, setCep] = useState({});
 
+  const [cep, setCep] = useState({});
   const [input, setInput] = useState("");
 
   const handleSearch = async () => {
